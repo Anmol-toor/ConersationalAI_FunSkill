@@ -1,0 +1,125 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "action",
+              "type": "ActionType"
+            },
+            {
+              "name": "rounds",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "name": "GameIntent",
+          "samples": [
+            "Let\u0027s play a game with {rounds} rounds",
+            "Play {rounds} rounds of rock paper scissors",
+            "I would like to choose {action}",
+            "I choose {action} ",
+            "{action}"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "CustomHelpIntent",
+          "samples": [
+            "Explain the game to me",
+            "Help me",
+            "What are the rules",
+            "How do I play"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "ScoreIntent",
+          "samples": [
+            "How am I doing so far",
+            "What are the scores",
+            "Tell me my score",
+            "How many games have I won",
+            "What is my score"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "rounds",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "name": "RoundsIntent",
+          "samples": [
+            "{rounds} rounds",
+            "{rounds}",
+            "{rounds} rounds please",
+            "Let\u0027s play {rounds} rounds",
+            "I want to play {rounds} rounds."
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "name",
+              "type": "AMAZON.US_FIRST_NAME"
+            }
+          ],
+          "name": "NameIntent",
+          "samples": [
+            "Please call me {name}",
+            "I am {name}",
+            "My name is {name}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "synonyms": [
+                  "scissors"
+                ],
+                "value": "scissor"
+              }
+            },
+            {
+              "name": {
+                "value": "rock"
+              }
+            },
+            {
+              "name": {
+                "value": "paper"
+              }
+            }
+          ],
+          "name": "ActionType"
+        }
+      ],
+      "invocationName": "fun game"
+    }
+  }
+}
